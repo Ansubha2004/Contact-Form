@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="website icon" type="png" href="form-logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="form">
+    <h1 title="Fill up the Contact Details" class="karla-styling">Contact Us</h1>
+    <div class="fillupbox sidebar" id="firstname">
+      <p>First Name  <span id="star">*</span></p><br>
+      <input class="input" type="text" placeholder="Type First Name">
+      <div class="redline" style="visibility:hidden">This field is required</div>
+    </div>
+    <div class="fillupbox sidebar" id="lastname">
+      <p>Last Name  <span id="star">*</span></p><br>
+      <input class="input" type="text" placeholder="Type Last Name">
+      <div class="redline" style="visibility:hidden">This field is required</div>
+    </div>
+    <div class="fillupbox" id="email">
+      <p>Email Address <span id="star">*</span></p><br>
+      <input class="input" type="text" placeholder="Type Mail ID">
+      <div class="redline" style="visibility:hidden">Please enter a valid email address</div>
+    </div>
+    <div class="fillupbox sidebar" id="gender">
+      <p>Gender  <span id="star">*</span></p><br>
+      <select class="input" name="sex">
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <div class="redline" style="visibility:hidden">Select your gender</div>
+    </div>
+    <div class="fillupbox sidebar" id="contactnumber">
+      <p>Contact Number  <span id="star">*</span></p><br>
+      <input class="input" type="number" placeholder="Type Mobile Number">
+      <div class="redline" style="visibility:hidden">Please enter valid contact number</div>
+    </div>
+    <div class="fillupbox" id="message">
+      <p>Message <span id="star">*</span></p><br>
+      <textarea style="height:70px; padding:8px 8px 8px 8px;" class="input" name="purpose" placeholder="Type your purpose"></textarea>
+      <div class="redline" style="visibility:hidden">This field is required</div>
+    </div> 
+    <div class="fillupbox" id="consent">
+      <input type="checkbox" value="notpermitted"><p id="consentline">I hereby consent to being contacted by <br id="nextline">the team  <span id="star">*</span></p><br>
+      <div class="redline" style="visibility:hidden">To submit this form, please consent to being contacted</div>
+    </div>
+    <button class="button">Submit</button>
+  </div> 
+  <script src="script.js"></script> 
+</body>
+</html>
