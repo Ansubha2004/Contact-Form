@@ -5,8 +5,7 @@ let g=document.querySelector("#gender");
 let cn=document.querySelector("#contactnumber");
 let msg=document.querySelector("#message");
 //media query ussing js
-var x=window.matchMedia("(max-width:485px)");
-textbox(x);//will show change in box shape at first 
+var x=window.matchMedia("(max-width:485px)"); 
 const textbox=(x)=>{
 if(x.matches==true)
     msg.children[2].setAttribute("style","height:100px; padding:8px 8px 8px 8px;");
