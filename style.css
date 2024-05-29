@@ -121,9 +121,6 @@ p{
         height:40px;
         width:100%;    
     }
-    textarea{
-        height:200px;
-    }
 }
 @media(min-width:434px){
     #consentline
@@ -133,5 +130,13 @@ p{
     }
     #nextline{
         display:none;
+    }
+}
+@media(max-height:375px){
+    body{
+        height:auto;
+    }
+    #form{
+        margin: 20px 0px 20px 0px;
     }
 }
